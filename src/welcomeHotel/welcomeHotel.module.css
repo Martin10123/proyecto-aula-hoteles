@@ -1,0 +1,104 @@
+.welcome__container::before {
+  background: url("../assets/image_welcome1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.welcome__content_info {
+  color: #fff;
+  padding: 1rem;
+  width: 100%;
+}
+
+.welcome__title_welcome {
+  font-size: 1.5rem;
+}
+
+.welcome__title_hotel {
+  font-size: 3rem;
+}
+
+.welcome__title_informa {
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  width: 15rem;
+}
+
+.welcome__content_btn_line {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  width: 100%;
+}
+
+.welcome__content_btn_line span {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.welcome__line_bottom {
+  background: #fff;
+  border-radius: 1rem;
+  height: 0.4rem;
+  width: 12.5rem;
+}
+
+.welcome__btn_bottom {
+  align-items: center;
+  background: transparent;
+  border-radius: 50%;
+  border: 3px solid;
+  bottom: 2rem;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.6rem;
+  height: 2.5rem;
+  justify-content: center;
+  position: absolute;
+  right: 1rem;
+  width: 2.5rem;
+}
+
+.welcome__buttons button {
+  background: #0000008a;
+  border-radius: 0.5rem;
+  border: 1px solid;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  height: 3rem;
+  width: 15rem;
+}
+
+@media (min-width: 800px) {
+  .welcome__container::before {
+    background: url("../assets/image_welcome2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .welcome__content_info {
+    padding: 8rem;
+  }
+
+  .welcome__title_informa,
+  .welcome__buttons button {
+    width: 21rem;
+  }
+}

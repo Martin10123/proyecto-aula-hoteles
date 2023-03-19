@@ -1,0 +1,53 @@
+.login__container {
+  height: 100vh;
+  width: 100%;
+}
+
+.login__container::before {
+  background: url("../../assets/login.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.login__content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.login__content > h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.login__content > span {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 600px) {
+  .login__container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .login__container::before {
+    background-position: inherit;
+  }
+
+  .login__content {
+    width: 30rem;
+  }
+}
